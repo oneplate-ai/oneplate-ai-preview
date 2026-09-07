@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
 
 
 
@@ -22,18 +22,17 @@
 <meta name="twitter:title" content="오늘 AI 한입 | AI 한 접시">
 <meta name="twitter:description" content="AI를 쉽고 가볍게, 그러나 정확하게 기록합니다.">
 
-
-
-
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
   <link rel="alternate" hreflang="ko-KR" href="https://oneplate-ai.github.io/oneplate-ai-preview/series/today-ai-bite/">
   <link rel="alternate" hreflang="en" href="https://oneplate-ai.github.io/oneplate-ai-preview/en/series/today-ai-bite/">
-
+  
 
 
   <link rel="icon" type="image/png" href="/oneplate-ai-preview/assets/brand/favicon-tight.png">
@@ -52,7 +51,7 @@
 </head>
 <body>
   <a class="skip-link" href="#content">본문으로 건너뛰기</a>
-
+  
 
 
 
@@ -64,42 +63,42 @@
   </a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">메뉴</button>
   <nav id="primary-nav" aria-label="주요 메뉴">
-
-
-
-
+    
+      
+      
+      
         <a href="/oneplate-ai-preview/series/today-ai-bite/">오늘 AI 한입</a>
-
-
-
-
-
+      
+    
+      
+      
+      
         <a href="/oneplate-ai-preview/series/weekly-ai/">주간 AI 한 접시</a>
-
-
-
-
-
+      
+    
+      
+      
+      
         <a href="/oneplate-ai-preview/series/easy-ai/">쉽게 먹는 AI</a>
-
-
-
-
-
+      
+    
+      
+      
+      
         <a class="coming-soon-link" href="#coming-soon-message" data-series-name="골라 먹는 AI">골라 먹는 AI</a>
-
-
-
-
-
+      
+    
+      
+      
+      
         <a class="coming-soon-link" href="#coming-soon-message" data-series-name="깊은 맛 AI">깊은 맛 AI</a>
-
-
+      
+    
   </nav>
   <button class="theme-toggle" type="button" aria-pressed="false" aria-label="다크 모드로 전환" data-theme-to-dark="다크 모드로 전환" data-theme-to-light="일반 모드로 전환" data-theme-dark-label="다크 모드" data-theme-light-label="일반 모드">
     <span aria-hidden="true">◐</span><span class="theme-label">다크 모드</span>
   </button>
-
+  
 
 
 
@@ -126,7 +125,7 @@
   <p id="coming-soon-message" class="coming-soon-message" role="status" aria-live="polite" hidden></p>
 </header>
 
-
+  
 
 
 <main id="content" class="series-page">
@@ -154,7 +153,7 @@
 <h2>오늘의 한 줄 정리</h2>
 <p class="summary">오늘의 세 소식은 AI가 연구 결과를 만들고 검증하는 과정에 더 깊이 들어오는 동시에, 그 속도를 사람이 어떻게 감독할지까지 함께 고민해야 한다는 점을 보여줍니다.<br />새로운 성능 주장과 전망을 만났을 때는 무엇이 실제로 검사되었는지, 누가 확인했는지, 아직 의견에 머무는 부분은 무엇인지 나누어 보는 것이 중요합니다.<br /></p>
 
-<p class="verification-note">세 항목은 2026년 9월 1일 발표된 공식 자료를 기준으로 정리했습니다.<br />제품의 실제 이용 가능 범위와 정책은 공개 전에 다시 확인해야 합니다.<br /></p>
+<p class="verification-note">이 글은 Anthropic의 9월 4일 발표와 OpenAI의 9월 6일 공식 글을 바탕으로 정리했습니다.<br />각 발표의 성과와 전망은 해당 기관의 설명이므로, 실제 이용 가능 범위와 정책은 공개 전에 다시 확인해야 합니다.<br /></p>
 
 <h2>출처</h2>
 <ul class="sources">
@@ -165,13 +164,13 @@
 </ul>
 
     </article>
-
+    
 
 <aside class="series-archive" aria-labelledby="archive-title">
   <h2 id="archive-title">오늘 AI 한입 목록</h2>
   <ol class="series-archive-list">
-
-
+    
+    
       <li>
         <a class="current" href="#latest">
           <time datetime="2026-09-07">2026. 09. 07</time>
@@ -179,7 +178,7 @@
           <span>현재 읽고 있는 글</span>
         </a>
       </li>
-
+    
       <li>
         <a href="/oneplate-ai-preview/posts/2026-09-04-today-ai-bite.html">
           <time datetime="2026-09-04">2026. 09. 04</time>
@@ -187,7 +186,7 @@
           <span>지난 글</span>
         </a>
       </li>
-
+    
       <li>
         <a href="/oneplate-ai-preview/posts/2026-09-02-today-ai-bite.html">
           <time datetime="2026-09-02">2026. 09. 02</time>
@@ -195,13 +194,16 @@
           <span>지난 글</span>
         </a>
       </li>
-
+    
   </ol>
 </aside>
 
   </div>
 </main>
 
+  <button class="back-to-top" type="button" aria-label="맨 위로 이동" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
   <script>
   const themeToggle = document.querySelector('.theme-toggle');
   const updateThemeButton = () => {
@@ -241,6 +243,17 @@
     }
   });
 
+  const backToTop = document.querySelector('.back-to-top');
+  const updateBackToTop = () => {
+    backToTop.hidden = window.scrollY < 500;
+  };
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  updateBackToTop();
+  backToTop.addEventListener('click', () => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+  });
+
   const siteHeader = document.querySelector('.site-header');
   const menuToggle = document.querySelector('.menu-toggle');
   const primaryNav = document.querySelector('#primary-nav');
@@ -248,21 +261,19 @@
     const isOpen = siteHeader.classList.toggle('nav-open');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
-  primaryNav.querySelectorAll('a').forEach((link) => {
+  document.querySelectorAll('.coming-soon-link').forEach((link) => {
     link.addEventListener('click', (event) => {
-      if (link.classList.contains('coming-soon-link')) {
-        event.preventDefault();
-        const message = document.querySelector('#coming-soon-message');
-        const template = siteHeader.dataset.comingSoonTemplate;
-        message.textContent = template.replace('{series}', link.dataset.seriesName);
-        const bounds = link.getBoundingClientRect();
-        const isMobile = window.matchMedia('(max-width: 720px)').matches;
-        message.style.left = `${isMobile ? window.innerWidth / 2 : bounds.left + bounds.width / 2}px`;
-        message.style.top = `${isMobile ? Math.min(bounds.bottom + 10, window.innerHeight - 80) : bounds.bottom + 10}px`;
-        message.hidden = false;
-        clearTimeout(window.comingSoonTimer);
-        window.comingSoonTimer = setTimeout(() => { message.hidden = true; }, 1500);
-      }
+      event.preventDefault();
+      const message = document.querySelector('#coming-soon-message');
+      const template = siteHeader.dataset.comingSoonTemplate;
+      message.textContent = template.replace('{series}', link.dataset.seriesName);
+      const bounds = link.getBoundingClientRect();
+      const isMobile = window.matchMedia('(max-width: 720px)').matches;
+      message.style.left = `${isMobile ? window.innerWidth / 2 : bounds.left + bounds.width / 2}px`;
+      message.style.top = `${isMobile ? Math.min(bounds.bottom + 10, window.innerHeight - 80) : bounds.bottom + 10}px`;
+      message.hidden = false;
+      clearTimeout(window.comingSoonTimer);
+      window.comingSoonTimer = setTimeout(() => { message.hidden = true; }, 1500);
       siteHeader.classList.remove('nav-open');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
