@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+<link rel="canonical" href="https://oneplate-ai.github.io/oneplate-ai-preview/en/posts/2026-09-04-easy-ai-02.html">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learning and Generative AI: What Is the Difference?">
+<meta property="og:description" content="How machine learning and generative AI do different things, with familiar examples of each.">
+<meta property="og:url" content="https://oneplate-ai.github.io/oneplate-ai-preview/en/posts/2026-09-04-easy-ai-02.html">
+<meta property="og:site_name" content="AI One Plate">
+<meta property="og:image" content="https://oneplate-ai.github.io/oneplate-ai-preview/assets/brand/logo-basic-tight.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Machine Learning and Generative AI: What Is the Difference?">
+<meta name="twitter:description" content="How machine learning and generative AI do different things, with familiar examples of each.">
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" hreflang="ko-KR" href="https://oneplate-ai.github.io/oneplate-ai-preview/posts/2026-09-04-easy-ai-02.html">
+  <link rel="alternate" hreflang="en" href="https://oneplate-ai.github.io/oneplate-ai-preview/en/posts/2026-09-04-easy-ai-02.html">
+
+
+
+  <link rel="icon" type="image/png" href="/oneplate-ai-preview/assets/brand/favicon-tight.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/oneplate-ai-preview/styles.css">
+  <title>Machine Learning and Generative AI: What Is the Difference? | AI One Plate</title>
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('ai-oneplate-theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = savedTheme || systemTheme;
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+
+
+
+
+
+<header class="site-header" data-coming-soon-template="{series} is coming soon.">
+  <a class="brand" href="/oneplate-ai-preview/en/" aria-label="AI One Plate home">
+    <img class="brand-logo horizontal" src="/oneplate-ai-preview/assets/brand/logo-horizontal-tight.png" alt="AI One Plate">
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+  <nav id="primary-nav" aria-label="Primary navigation">
+
+
+
+
+        <a href="/oneplate-ai-preview/en/series/today-ai-bite/">Daily AI Bite</a>
+
+
+
+
+
+        <a href="/oneplate-ai-preview/en/series/weekly-ai/">Weekily AI Platter</a>
+
+
+
+
+
+        <a href="/oneplate-ai-preview/en/series/easy-ai/">Digestible AI</a>
+
+
+
+
+
+        <a class="coming-soon-link" href="#coming-soon-message" data-series-name="A La Carte AI">A La Carte AI</a>
+
+
+
+
+
+        <a class="coming-soon-link" href="#coming-soon-message" data-series-name="Gourmet AI">Gourmet AI</a>
+
+
+  </nav>
+  <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" data-theme-to-dark="Switch to dark mode" data-theme-to-light="Switch to light mode" data-theme-dark-label="Dark mode" data-theme-light-label="Light mode">
+    <span aria-hidden="true">◐</span><span class="theme-label">Dark mode</span>
+  </button>
+
+
+
+
+
+
+
+<div class="language-switcher">
+  <button class="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu" aria-label="Choose language">
+    <span class="language-flag" aria-hidden="true">🇺🇸</span>
+    <span class="sr-only">English</span>
+  </button>
+  <div id="language-menu" class="language-menu" hidden>
+    <a href="/oneplate-ai-preview/posts/2026-09-04-easy-ai-02.html">
+      <span aria-hidden="true">🇰🇷</span>
+      <span>한국어</span>
+    </a>
+    <a href="/oneplate-ai-preview/en/posts/2026-09-04-easy-ai-02.html" aria-current="true">
+      <span aria-hidden="true">🇺🇸</span>
+      <span>English</span>
+    </a>
+  </div>
+</div>
+
+  <p id="coming-soon-message" class="coming-soon-message" role="status" aria-live="polite" hidden></p>
+</header>
+
+  <main id="content" class="post-wrap">
+  <div class="series-page-layout">
+    <article>
+      <p class="post-kicker">Easy AI · Second course</p>
+<h1>Machine Learning and Generative AI: What Is the Difference?</h1>
+<blockquote>There are several ways to prepare AI inside the same big plate.<br />This time, we will separate how AI learns from data from how it creates new results.<br /></blockquote>
+
+<h2>What does machine learning learn?</h2>
+<p><strong>Machine learning</strong> is a way of training computers to examine a large amount of <strong>data</strong>, find rules or patterns in it, and produce a result.<br /></p>
+<p>Google for Developers describes machine learning as a way to train software, called a model, to make predictions or generate content from data.<br /><a href="https://developers.google.com/machine-learning/intro-to-ml/what-is-ml">Read Google’s official explanation of machine learning</a><br /></p>
+
+<h2>Machine learning that makes predictions</h2>
+<p>For example, if a system is shown a great deal of past weather data, it may find patterns between information such as temperature, humidity, and clouds and the amount of rain that followed.<br />When it receives new weather information, it can then <strong>predict</strong> how much rain may fall.<br />Spam filters, estimated arrival times in navigation apps, and video recommendations can also involve prediction or classification.<br /></p>
+<p>A machine-learning result is a prediction based on patterns found in past data, not a judgment that guarantees the correct answer.<br /></p>
+
+<h2>What does generative AI create?</h2>
+<p><strong>Generative AI</strong> is AI that creates <strong>new outputs</strong>, such as text, images, music, or code, from patterns it has learned.<br /></p>
+<p>It can help to think of AI tasks in two broad groups: <strong>prediction and classification</strong>, and <strong>content generation</strong>.<br />Looking at a photo and deciding whether it shows a cat, or estimating the chance of rain tomorrow, is closer to prediction or classification.<br />Creating something new from an instruction is closer to generative AI.<br /></p>
+<p>If you ask, “What should I pack for camping on a rainy day?”, generative AI can compose an answer from the meaning of the question and the language patterns it learned.<br />When asked for an image, it combines shapes and colors; when asked for a song, it combines musical patterns; and when asked for code, it can draft the commands that may be needed.<br />The important point is that generative AI does not have a finished answer stored in its mind or experience the world as a person does.<br />It produces an output step by step by calculating what fits the input and its learned patterns.<br /></p>
+<p>For that reason, generative AI is better understood as producing a new output by combining learned patterns than as simply copying its training material.<br />That still does not guarantee that every result is factual or original.<br /></p>
+<p>Google’s machine-learning materials similarly describe generative AI as learning patterns from existing data to create new content such as text, images, and music.<br /><a href="https://developers.google.com/machine-learning/intro-to-ml/what-is-ml">Read the same official explanation of generative AI</a><br /></p>
+<figure><img src="/oneplate-ai-preview/assets/images/easy-ai-02-generative-outputs.png" alt="Generative AI creating text, images, and code" /></figure>
+
+<h2>What kinds of generative AI are there?</h2>
+<p>Generative AI is not the name of one service. It is a term for technology that creates new outputs.<br />The services people use can look different depending on the kind of output they make.<br /></p>
+<ul>
+<li><strong>Text and conversation</strong>: services such as ChatGPT, Gemini, and Claude that answer questions and help organize writing</li>
+<li><strong>Images</strong>: services such as Midjourney and Adobe Firefly that create images from a description</li>
+<li><strong>Code</strong>: services such as GitHub Copilot that suggest and explain programming code</li>
+</ul>
+<p>These services are made by different companies and have different features and access conditions.<br />A single service may also work with text, images, audio, and code, so these categories are simply a way to make the idea easier to understand.<br /></p>
+<figure><img src="/oneplate-ai-preview/assets/images/easy-ai-02-generative-types.png" alt="Examples of generative AI for text, images, and code" /></figure>
+
+<h2>Are they completely different technologies?</h2>
+<p>Not exactly.<br /><strong>Generative AI is also a system built with machine learning in the broad sense.</strong><br />What differs is how we look at the result.<br /></p>
+<ul>
+<li>Machine learning: classifies information or predicts a number from the information it is given.</li>
+<li>Generative AI: creates a new output from the patterns it has learned.</li>
+</ul>
+<p>Estimating whether it will rain tomorrow is closer to prediction; writing a story about a rainy day is closer to generation.<br /></p>
+
+<h2>Generative-AI answers still need checking</h2>
+<p>Creating new content does not mean an AI system always creates an accurate result.<br />It can produce a plausible but incorrect answer when information is limited or when it misunderstands the question.<br />When you use generative AI for something important, check the sources and review names, dates, and numbers again.<br /></p>
+
+<h2>In one sentence</h2>
+<p class="summary"><strong>Machine learning uses data to classify and predict, while generative AI uses learned patterns to create new text, images, music, code, and other outputs.</strong><br /></p>
+
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://developers.google.com/machine-learning/intro-to-ml/what-is-ml">Google for Developers — What is Machine Learning?</a></li>
+</ul>
+
+    </article>
+
+
+<aside class="series-archive" aria-labelledby="archive-title">
+  <h2 id="archive-title">Easy AI archive</h2>
+  <ol class="series-archive-list">
+
+
+      <li>
+        <a class="current" href="/oneplate-ai-preview/en/posts/2026-09-04-easy-ai-02.html">
+          <time datetime="2026-09-04">2026. 09. 04</time>
+          <strong>Machine Learning and Generative AI: What Is the Difference?</strong>
+          <span>Reading now</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="/oneplate-ai-preview/en/posts/2026-09-03-easy-ai-01.html">
+          <time datetime="2026-09-03">2026. 09. 03</time>
+          <strong>What Is AI? A Technology We Meet Every Day</strong>
+          <span>Earlier post</span>
+        </a>
+      </li>
+
+  </ol>
+</aside>
+
+  </div>
+</main>
+
+  <script>
+  const themeToggle = document.querySelector('.theme-toggle');
+  const updateThemeButton = () => {
+    const isDark = document.documentElement.dataset.theme === 'dark';
+    themeToggle.setAttribute('aria-pressed', String(isDark));
+    themeToggle.setAttribute('aria-label', isDark ? themeToggle.dataset.themeToLight : themeToggle.dataset.themeToDark);
+    themeToggle.querySelector('.theme-label').textContent = isDark ? themeToggle.dataset.themeLightLabel : themeToggle.dataset.themeDarkLabel;
+  };
+  updateThemeButton();
+  themeToggle.addEventListener('click', () => {
+    const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = nextTheme;
+    localStorage.setItem('ai-oneplate-theme', nextTheme);
+    updateThemeButton();
+  });
+
+  const languageSwitcher = document.querySelector('.language-switcher');
+  const languageToggle = document.querySelector('.language-toggle');
+  const languageMenu = document.querySelector('#language-menu');
+  const closeLanguageMenu = () => {
+    languageMenu.hidden = true;
+    languageToggle.setAttribute('aria-expanded', 'false');
+  };
+  const toggleLanguageMenu = () => {
+    const isOpen = !languageMenu.hidden;
+    languageMenu.hidden = isOpen;
+    languageToggle.setAttribute('aria-expanded', String(!isOpen));
+  };
+  languageToggle.addEventListener('click', toggleLanguageMenu);
+  document.addEventListener('click', (event) => {
+    if (!languageSwitcher.contains(event.target)) closeLanguageMenu();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeLanguageMenu();
+      languageToggle.focus();
+    }
+  });
+
+  const siteHeader = document.querySelector('.site-header');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const primaryNav = document.querySelector('#primary-nav');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = siteHeader.classList.toggle('nav-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  primaryNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (link.classList.contains('coming-soon-link')) {
+        event.preventDefault();
+        const message = document.querySelector('#coming-soon-message');
+        const template = siteHeader.dataset.comingSoonTemplate;
+        message.textContent = template.replace('{series}', link.dataset.seriesName);
+        const bounds = link.getBoundingClientRect();
+        const isMobile = window.matchMedia('(max-width: 720px)').matches;
+        message.style.left = `${isMobile ? window.innerWidth / 2 : bounds.left + bounds.width / 2}px`;
+        message.style.top = `${isMobile ? Math.min(bounds.bottom + 10, window.innerHeight - 80) : bounds.bottom + 10}px`;
+        message.hidden = false;
+        clearTimeout(window.comingSoonTimer);
+        window.comingSoonTimer = setTimeout(() => { message.hidden = true; }, 1500);
+      }
+      siteHeader.classList.remove('nav-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
