@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-08T05:30:00+00:00",
+  "services": [
+    {
+      "id": "ai-one-plate",
+      "name": "AI 한 접시",
+      "description": "초심자를 위한 AI 콘텐츠 서비스",
+      "lifecycle": "operating",
+      "public_url": "https://oneplate-ai.github.io/",
+      "automated_status": "healthy",
+      "checks": [{"name": "public", "status": "ok", "code": 200}, {"name": "preview", "status": "ok"}],
+      "github": {"status": "ok", "latest_commit": {"message": "한·영 LLM 소개 글 발행", "date": "2026-09-08T04:17:00+00:00"}},
+      "next_action": "승인된 일정에 따라 한·영 콘텐츠를 검토·발행"
+    },
+    {
+      "id": "campingeazy",
+      "name": "Campingeazy",
+      "description": "캠핑 대여 예약 관리 서비스",
+      "lifecycle": "operating",
+      "public_url": "https://campingeazy.com/",
+      "automated_status": "healthy",
+      "checks": [{"name": "public", "status": "ok", "code": 200}, {"name": "application", "status": "ok"}],
+      "github": {"status": "ok", "latest_commit": {"message": "v4-1 보안 경계 강화 배포", "date": "2026-09-04T00:36:50+00:00"}},
+      "next_action": "v4-2 범위와 다음 최소 개선 항목 결정"
+    },
+    {
+      "id": "rohui-company",
+      "name": "RohuiCompany",
+      "description": "향후 구축·재개 여부를 결정할 서비스",
+      "lifecycle": "planned",
+      "public_url": null,
+      "automated_status": "planned",
+      "checks": [],
+      "github": {"status": "ok", "latest_commit": {"message": "CI용 Prisma 구성 보완", "date": "2026-08-24T11:31:55+00:00"}},
+      "next_action": "서비스 목적·범위·배포 계획 결정"
+    }
+  ]
+}
