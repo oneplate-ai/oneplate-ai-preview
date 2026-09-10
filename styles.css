@@ -262,6 +262,14 @@ html[data-theme="dark"] .principle-layout li:last-child { border-color: #465148;
   margin: 0 auto;
   border-radius: 8px;
 }
+.series-page-layout article figure .image-credit {
+  margin: 10px 0 0;
+  color: #758075;
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.5;
+  text-indent: 0;
+}
 .source-badge {
   display: inline-block;
   margin-left: 10px;
@@ -300,6 +308,7 @@ html[data-theme="dark"] .verification-note {
   background: #202720;
   color: #aab4aa;
 }
+html[data-theme="dark"] .series-page-layout article figure .image-credit { color: #aab4aa; }
 @media (max-width: 560px) {
   .series-page-layout article figure img { width: 100%; }
 }
