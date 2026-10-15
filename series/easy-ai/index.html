@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="쉽게 먹는 AI | AI 한 접시">
 <meta name="twitter:description" content="AI를 쉽고 가볍게, 그러나 정확하게 기록합니다.">
-
+<meta name="robots" content="noindex, nofollow">
 
 
 
@@ -132,76 +132,67 @@
 <main id="content" class="series-page">
   <div class="series-page-layout">
     <article id="latest">
-      <p class="post-kicker">쉽게 먹는 AI 여섯번째 접시</p>
+      <p class="post-kicker">쉽게 먹는 AI 일곱번째 접시</p>
 
-<h1>AI에게 원하는 답을<br />받는 질문법</h1>
+<h1>AI 답변은 왜<br />틀릴 수 있을까?</h1>
 
-<blockquote>AI에게 무엇을 물어볼지 막막할 때는, 멋진 문장을 찾기보다 내가 원하는 결과를 네 가지로 나누어 전해 보세요.<br />목적·상황·형식·제한을 더하면 답을 비교하고 고치기도 쉬워집니다.<br /></blockquote>
+<blockquote>AI는 자연스러운 문장을 잘 만들지만, 말투가 자신 있어 보여도 사실까지 자동으로 보장하지는 않습니다.<br />오늘은 그럴듯한 오류를 환각이라고 부르는 이유와, 답을 안전하게 확인하는 방법을 알아봅니다.<br /></blockquote>
 
-<figure><img src="/oneplate-ai-preview/assets/images/easy-ai-06-prompt-four-elements.svg" alt="캠핑을 준비하는 사람이 AI의 도움으로 목적, 상황, 답변 형식, 제한을 상징하는 네 장의 카드로 요청을 구체화하는 모습" /></figure>
+<figure><img src="/oneplate-ai-preview/assets/images/easy-ai-07-checking-answer.svg" alt="한 사람이 AI가 만든 답변을 원문 자료와 대조하며 확인하는 모습" /></figure>
 
-<h2>프롬프트는 AI에게 보내는 요청입니다.</h2>
+<h2>환각은 그럴듯하지만 틀린 답입니다. <a class="source-badge" href="https://help.openai.com/en/articles/8313428">OpenAI 공식 안내</a></h2>
 
-<p><strong>프롬프트(Prompt)</strong>는 AI에게 보내는 질문이나 지시를 말합니다.<br />한 줄 질문으로 시작해도 괜찮지만, AI는 내가 속으로만 알고 있는 목적이나 조건까지 자동으로 알지는 못합니다.<br />그래서 원하는 결과를 조금 더 알려 주면, 답이 내 상황에 가까워질 수 있습니다.<br /></p>
+<p><strong>환각(Hallucination)</strong>은 AI가 사실이 아닌 내용을 사실처럼 만들어내는 현상입니다.<br />날짜·인물·책 제목·인용문·출처 링크를 틀리게 만들 수도 있고, 질문이 모호할 때도 자신 있게 한 가지 답을 고를 수 있습니다.<br /></p>
 
-<p>좋은 프롬프트는 정답을 보장하는 마법 문장이 아닙니다.<br />AI가 무엇을 해야 하는지 이해할 단서를 늘리고, 내가 받은 답이 맞는지 살펴보기 쉽게 만드는 요청 방식입니다.<br /></p>
+<p>여기서 ‘환각’은 AI가 사람처럼 무언가를 보고 있다는 뜻이 아닙니다.<br />AI가 자연스러운 문장을 만들었지만, 그 문장의 내용이 실제 사실과 맞지 않는다는 비유적인 표현입니다.<br /></p>
 
-<h2>먼저, 목적을 말해 보세요. <a class="source-badge" href="https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt">OpenAI 공식 안내</a></h2>
+<h2>AI는 왜 모를 때도 답하려 할까요?</h2>
 
-<p>처음에는 이렇게 짧게 물을 수 있습니다.<br /></p>
+<p>언어 모델은 앞에서 주어진 말에 이어질 가능성이 높은 표현을 바탕으로 답을 만듭니다.<br />그래서 문장을 매끄럽게 이어가는 능력과 사실을 확인하는 능력은 같은 것이 아닙니다.<br /></p>
 
-<blockquote>캠핑 준비물 알려줘.</blockquote>
+<p>OpenAI의 연구 설명에 따르면, 언어 모델은 불확실할 때 “모르겠다”고 멈추기보다 추측하는 편이 더 좋은 점수를 받는 방식으로 평가될 수 있습니다.<br />그 결과 정답을 모르는 질문에도 틀린 답을 자신 있게 내놓는 문제가 생길 수 있습니다.<br /><a href="https://openai.com/index/why-language-models-hallucinate/">OpenAI 공식 연구 설명 보기</a><br /></p>
 
-<p>이 질문도 답을 받을 수 있지만, AI는 당일 나들이인지 숙박인지, 누구를 위한 준비인지 알 수 없습니다.<br />내가 하려는 일을 한 문장으로 먼저 말해 보세요.<br /></p>
+<blockquote>말투가 자연스럽다 = 사실이다, 는 뜻이 아닙니다.</blockquote>
 
-<blockquote>처음 1박 2일 캠핑을 준비하고 있어. 필요한 준비물을 알려줘.</blockquote>
+<h2>특히 이런 답은 한 번 더 확인하세요.</h2>
 
-<p>목적을 알려 주면 AI는 답의 방향을 더 쉽게 잡을 수 있습니다.<br />글 요약, 여행 계획, 메일 초안처럼 다른 일을 부탁할 때도 “무엇을 하려는지”부터 적는 방법은 같습니다.<br /></p>
+<ul>
+<li>오늘의 가격·재고·영업시간처럼 자주 바뀌는 정보.</li>
+<li>예약 가능 여부, 일정, 지원 지역처럼 현재 상태가 중요한 정보.</li>
+<li>건강·법률·금융·안전처럼 틀렸을 때 피해가 큰 정보.</li>
+<li>인용문, 논문, 책, 법 조항, 통계처럼 원문이 필요한 정보.</li>
+</ul>
 
-<h2>상황과 조건을 덧붙이세요. <a class="source-badge" href="https://ai.google.dev/gemini-api/docs/prompting-strategies">Google 공식 안내</a></h2>
+<p>AI가 출처 링크를 함께 보여주더라도 확인은 끝나지 않습니다.<br />링크가 실제로 열리는지, 링크의 원문이 AI의 설명을 정말 뒷받침하는지, 내 상황에 적용해도 되는지를 사람이 살펴봐야 합니다.<br /></p>
 
-<p>같은 캠핑이라도 계절, 인원, 이동 방법에 따라 필요한 준비가 달라집니다.<br />AI가 답에 반영해야 할 정보는 짧게 덧붙여 주세요.<br /></p>
+<h2>답을 확인하는 네 가지 순서.</h2>
 
-<blockquote>가을 주말에 성인 두 명이 차로 처음 1박 2일 캠핑을 가. 필요한 준비물을 알려줘.</blockquote>
+<p><strong>첫째, 답에서 확인할 문장을 골라 보세요.</strong><br />모든 문장을 똑같이 조사하기보다 날짜·숫자·이름·인용문처럼 틀리면 곤란한 부분부터 표시합니다.<br /></p>
 
-<p>개인정보를 많이 넣을 필요는 없습니다.<br />정확한 집 주소, 전화번호, 주민등록번호, 회사의 비공개 자료처럼 민감한 정보는 프롬프트에 붙여 넣지 않는 편이 안전합니다.<br />답에 꼭 필요한 조건만 골라 적으면 됩니다.<br /></p>
+<p><strong>둘째, 원문을 찾으세요.</strong><br />공식 기관, 제품의 공식 안내, 논문 원문처럼 정보를 처음 발표한 곳을 우선 봅니다.<br /></p>
 
-<h2>받고 싶은 답의 모양을 정하세요.</h2>
+<p><strong>셋째, 원문과 답을 나란히 비교하세요.</strong><br />AI가 말한 범위보다 원문이 더 좁거나, 조건·예외·날짜를 생략하지 않았는지 확인합니다.<br /></p>
 
-<p>AI는 표, 목록, 짧은 요약, 단계별 설명처럼 여러 형태로 답할 수 있습니다.<br />어떻게 받고 싶은지 말하면, 받은 뒤 다시 정리하는 일을 줄일 수 있습니다.<br /></p>
+<p><strong>넷째, 확실하지 않으면 사용을 미루세요.</strong><br />확인할 원문을 찾지 못했거나 서로 다른 자료가 충돌한다면, 중요한 결정에 바로 쓰지 않는 편이 안전합니다.<br /></p>
 
-<blockquote>필수 준비물 7개를 번호 목록으로 정리해줘. 각 항목이 필요한 이유도 한 문장으로 써줘.</blockquote>
+<h2>AI에게 확인을 부탁해도 사람의 검토는 필요합니다.</h2>
 
-<p>글을 읽기 쉽게 고치고 싶다면 “초등학생도 이해할 수 있게 세 문단으로 설명해줘”라고 요청할 수 있습니다.<br />회의 메모를 정리할 때는 “결정된 일·담당자·마감일로 나누어 표로 만들어줘”처럼 결과 형식을 먼저 정할 수 있습니다.<br /></p>
+<p>AI에게 “모르면 모른다고 말해줘”, “주장마다 출처를 붙여줘”, “확실하지 않은 부분을 따로 표시해줘”라고 요청할 수 있습니다.<br />이런 요청은 검토할 지점을 찾는 데 도움이 됩니다.<br /></p>
 
-<h2>빼고 싶은 것과 확인 기준도 말하세요.</h2>
-
-<p>답이 너무 길거나 내게 필요 없는 내용이 섞일 때는, 하지 말아야 할 일과 답의 기준을 덧붙여 보세요.<br /></p>
-
-<blockquote>비싼 장비 추천은 빼고, 처음 가는 사람이 놓치기 쉬운 항목에는 ‘확인’ 표시를 해줘.</blockquote>
-
-<p>처음부터 완벽한 요청을 쓰지 못해도 괜찮습니다.<br />답을 읽고 “목록을 다섯 개로 줄여줘”, “비 오는 날 기준으로 다시 알려줘”처럼 한 가지씩 고치는 과정이 자연스럽습니다.<br /></p>
-
-<figure><img src="/oneplate-ai-preview/assets/images/easy-ai-06-refine-and-verify.svg" alt="흩어진 캠핑 준비물 생각이 AI로 정리된 뒤, 한 사람이 지도와 실제 장비를 대조하며 목록을 확인하는 모습" /></figure>
-
-<h2>중요한 정보는 AI 답만 믿지 마세요. <a class="source-badge" href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview">Anthropic 공식 안내</a></h2>
-
-<p>프롬프트를 자세히 써도 AI의 답에 틀린 정보가 없어진다고 보장할 수는 없습니다.<br />가격, 재고, 예약 가능 여부, 안전 수칙, 의료·법률·금융처럼 중요한 정보는 공식 안내나 믿을 수 있는 원문으로 다시 확인해야 합니다.<br /></p>
-
-<p>AI에게 출처를 함께 알려 달라고 요청하는 것은 도움이 될 수 있습니다.<br />하지만 링크가 실제로 존재하는지, 내 상황에 맞는지 확인하는 일은 사람의 몫으로 남습니다.<br /></p>
+<p>하지만 이런 문장을 덧붙였다고 해서 오류가 사라지는 것은 아닙니다.<br />AI가 제시한 출처도 실제 원문과 대조해야 하며, 중요한 결정을 대신 맡기지 않아야 합니다.<br /></p>
 
 <h2>한 줄 정리.</h2>
 
-<p>AI에게 원하는 답을 받으려면 목적·상황·형식·제한을 차례로 알려 주고, 받은 답은 중요한 정보부터 다시 확인하세요.<br /></p>
+<p><strong>AI의 자신 있는 말투는 사실 확인이 아니므로, 중요한 답은 원문을 찾아 날짜·숫자·조건을 직접 비교하세요.</strong><br /></p>
 
-<p class="verification-note">이 초안은 2026년 10월 8일 OpenAI·Google·Anthropic의 공식 프롬프트 안내를 확인해 작성했습니다.<br />각 서비스의 기능과 응답은 모델·설정·시점에 따라 달라질 수 있습니다.<br /></p>
+<p>다음 글에서는 AI가 틀린 답을 줄 때도 사람이 더 안전하게 활용할 수 있도록, 질문을 고치고 결과를 검토하는 방법을 살펴보겠습니다.<br /></p>
+
+<p class="verification-note">이 초안은 2026년 10월 15일 OpenAI의 공식 도움말과 연구 설명을 확인해 작성했습니다.<br />AI의 답변·도구·최신 정보 접근 여부는 서비스와 설정에 따라 달라질 수 있습니다.<br /></p>
 
 <h2>출처.</h2>
-
-<ul>
-  <li><a href="https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt">OpenAI Help Center — Prompt engineering best practices for ChatGPT</a></li>
-  <li><a href="https://ai.google.dev/gemini-api/docs/prompting-strategies">Google AI for Developers — Prompt design strategies</a></li>
-  <li><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview">Anthropic — Prompt engineering overview</a></li>
+<ul class="sources">
+<li><a href="https://help.openai.com/en/articles/8313428">OpenAI Help Center — Does ChatGPT tell the truth?</a></li>
+<li><a href="https://openai.com/index/why-language-models-hallucinate/">OpenAI — Why language models hallucinate</a></li>
 </ul>
 
     </article>
@@ -214,8 +205,8 @@
 
       <li>
         <a class="current" href="#latest">
-          <time datetime="2026-10-08">2026. 10. 08</time>
-          <strong>AI에게 원하는 답을 받는 질문법</strong>
+          <time datetime="2026-10-15">2026. 10. 15</time>
+          <strong>AI 답변은 왜 틀릴 수 있을까?</strong>
           <span>현재 읽고 있는 글</span>
         </a>
       </li>
