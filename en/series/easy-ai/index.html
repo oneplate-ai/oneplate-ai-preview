@@ -132,61 +132,63 @@
 <main id="content" class="series-page">
   <div class="series-page-layout">
     <article id="latest">
-      <p class="post-kicker">Digestible AI · Plate Eight</p>
+      <p class="post-kicker">Digestible AI · Plate Nine</p>
 
-<h1>The Context Window<br />Is AI’s Workspace.</h1>
+<h1>Is It Safe to Put<br />Personal Information into AI?</h1>
 
-<blockquote>AI can use earlier messages and documents, but the information it can consider at one time has limits.<br />This lesson explains context windows and how to handle a long conversation more reliably.<br /></blockquote>
+<blockquote>When you ask AI to edit or organize something, you may want to include names, contact details, or the full document.<br />This lesson shows what to remove and which privacy and retention conditions to check first.<br /></blockquote>
 
-<figure><img src="/oneplate-ai-preview/assets/images/easy-ai-08-context-window.svg" alt="A person organizes notes in one workspace while an AI refers to the material" /></figure>
+<figure><img src="/oneplate-ai-preview/assets/images/easy-ai-09-privacy.svg" alt="A person checks a redacted document before asking an AI for a safe summary" /></figure>
 
-<h2>A context window is the workspace an AI can use at one time. <a class="source-badge" href="https://ai.google.dev/gemini-api/docs/long-context">Google documentation</a></h2>
+<h2>Personal information can identify a person. <a class="source-badge" href="https://www.ftc.gov/business-guidance/privacy-security">FTC guidance</a></h2>
 
-<p><strong>Context window</strong> means the range of input and conversation that an AI can use when creating one response.<br />It is useful to think of it as short-term memory or a workspace that holds the material needed for the current answer.<br /></p>
+<p><strong>Personal information</strong> is information that identifies someone directly, or that can identify them when combined with other details.<br />Examples can include a phone number, address, email, account number, face photo, health record, school, or workplace information.<br /></p>
 
-<p>The material is not limited to the latest question.<br />Depending on the service and model, it can include earlier messages, pasted documents, images, and other input.<br /></p>
+<p>A single detail may look harmless, but several ordinary details together can reveal who someone is.<br />Do not assume that removing a name is enough; ask whether the remaining material could still point to a specific person.<br /></p>
 
-<h2>Tokens are the units used to measure that space.</h2>
+<h2>Start by keeping only what the task needs.</h2>
 
-<p><strong>Tokens</strong> are small units that an AI uses to process text and other inputs.<br />A word is not always one token; a word can be split into several tokens depending on the language and expression.<br /></p>
+<p>If you want AI to improve a sentence, it usually does not need a real name, phone number, or address.<br />Replace “Alex Kim” with “Customer A,” and remove account numbers, government ID numbers, passwords, and medical details unless the task truly requires them and the service is approved for that use.<br /></p>
 
-<p>That is why context windows are often described in tokens rather than characters.<br />As your question and reference material grow, they use more of the workspace, while the response also needs room to be generated.<br /></p>
+<p>The same applies to workplace or school documents.<br />Having permission to read a document does not automatically give you permission to upload it to an AI service, so check your organization’s rules and the document’s allowed use first.<br /></p>
 
-<h2>Older parts of a long conversation may be removed. <a class="source-badge" href="https://platform.openai.com/docs/api-reference/realtime-client-events/session">OpenAI documentation</a></h2>
+<h2>Check the service’s data controls and retention terms separately. <a class="source-badge" href="https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt">OpenAI guidance</a></h2>
 
-<p>When a conversation and its material become larger than the context window, the full history cannot keep being included.<br />A service may shorten, summarize, or leave out older messages before generating the next response.<br /></p>
+<p>Services can differ in how they save chats, use content to improve models, handle memory, review content, and process deletion requests.<br />Do not assume that every AI service treats personal information in the same way; read the official settings and privacy notice for the service you are using.<br /></p>
 
-<p>That is why a detail from the beginning of a conversation can become less effective later.<br />If an AI seems to forget an earlier agreement, the reason may be that the information is no longer included in the current input, not that the system has human-like memory.<br /></p>
+<p>For example, personal ChatGPT accounts can manage whether conversations are used to improve models under <strong>Settings → Data Controls</strong>.<br />Turning that setting off does not automatically delete saved chats, and temporary chats can still be retained for safety, so “temporary” does not mean that no copy can exist.<br /></p>
 
-<h2>A large document does not mean every part will be used equally well.</h2>
+<h2>A temporary chat or a changed setting is not the same as deletion.</h2>
 
-<p>A large context window is useful when you need to work with a long document or several files at once.<br />But as the amount of material grows, it can become harder to find the important part, separate conflicting details, and connect the question to the right passage.<br /></p>
+<p>Google’s official Gemini privacy guidance also distinguishes activity storage from processing needed to provide the service and protect users.<br />Even when activity saving is off, Google says it may still process chats to respond and to support safety, so one setting does not remove every privacy consideration.<br /></p>
 
-<p>So “the model can accept the material” is not the same as “the model will use every part accurately.”<br />Google’s long-context guidance recommends providing only what is needed and placing a clear question after the reference material when appropriate.<br /></p>
+<p>Before entering sensitive information, reduce it first.<br />If you already entered it, check how the service handles chats, files, memories, and activity, and delete what you no longer need.<br />For a work or school account, administrator retention rules may take priority over personal settings.<br /></p>
 
-<h2>Keep the workspace organized for a long task.</h2>
+<h2>Use these four checks when personal information is involved.</h2>
 
-<p><strong>First, choose only the material you need.</strong><br />Removing unrelated messages and documents makes it easier to focus on the current question.<br /></p>
+<p><strong>First, is the information necessary?</strong><br />Keep only the part needed for the AI task and remove the rest.<br /></p>
 
-<p><strong>Second, repeat the important constraints.</strong><br />Briefly restate the goal, audience, deadline, and prohibitions near the end of a long request when they must not be missed.<br /></p>
+<p><strong>Second, whose information is it?</strong><br />Check permission and consent before uploading another person’s contact details, photo, or document.<br /></p>
 
-<p><strong>Third, leave a checkpoint summary.</strong><br />Have a person confirm the decisions and remaining work, then use that summary as the starting point for a new conversation when needed.<br /></p>
+<p><strong>Third, where is it stored and for how long?</strong><br />Read the service’s official terms about storage, deletion, model improvement, and human review.<br /></p>
 
-<p><strong>Fourth, compare important results with the original.</strong><br />Even a large context window can still lead to a misunderstanding or omission, so check important numbers, conditions, and quotations against the source.<br /></p>
+<p><strong>Fourth, did you clean up the copies afterward?</strong><br />The original file, a copied file, and the AI result may all contain personal information, so remove unnecessary versions and chats.<br /></p>
+
+<blockquote>The safest personal information is information you never send.</blockquote>
 
 <h2>One-line takeaway.</h2>
 
-<p><strong>A context window is the workspace an AI can use for a response, so long tasks work better when you restate the needed material and key constraints.</strong><br /></p>
+<p><strong>Share only the minimum information, use placeholders when possible, and check each service’s storage, deletion, and model-improvement rules before sending sensitive data.</strong><br /></p>
 
-<p>In the next lesson, we will look at prompts and how to describe the result you want more clearly.<br /></p>
+<p>In the next lesson, we will look at how to write a prompt that communicates the result you want more clearly.<br /></p>
 
-<p class="verification-note">This draft was prepared on October 22, 2026 after checking official Google and OpenAI documentation about context windows, tokens, and conversation input limits.<br />Actual input limits and conversation handling vary by service, model, and settings.<br /></p>
+<p class="verification-note">This draft was prepared on October 29, 2026 after checking official privacy and data-control guidance from the FTC, OpenAI, and Google.<br />Retention periods, setting names, human review, and available controls can vary by service, account, region, and organization policy.<br /></p>
 
 <h2>Sources.</h2>
 <ul class="sources">
-<li><a href="https://ai.google.dev/gemini-api/docs/long-context">Google AI for Developers — Long context</a></li>
-<li><a href="https://ai.google.dev/gemini-api/docs/tokens">Google AI for Developers — Understand and count tokens</a></li>
-<li><a href="https://platform.openai.com/docs/api-reference/realtime-client-events/session">OpenAI API Reference — Realtime session truncation</a></li>
+<li><a href="https://www.ftc.gov/business-guidance/privacy-security">Federal Trade Commission — Privacy and Security</a></li>
+<li><a href="https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt">OpenAI Help Center — Data controls in ChatGPT</a></li>
+<li><a href="https://support.google.com/gemini/answer/13594961?hl=en">Google Gemini Apps Help — Gemini Apps Privacy Hub</a></li>
 </ul>
 
     </article>
@@ -199,8 +201,8 @@
 
       <li>
         <a class="current" href="#latest">
-          <time datetime="2026-10-22">2026. 10. 22</time>
-          <strong>The Context Window Is AI’s Workspace.</strong>
+          <time datetime="2026-10-29">2026. 10. 29</time>
+          <strong>Is It Safe to Put Personal Information into AI?</strong>
           <span>Reading now</span>
         </a>
       </li>
