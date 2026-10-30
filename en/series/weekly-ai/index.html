@@ -133,43 +133,40 @@
   <div class="series-page-layout">
     <article id="latest">
       <p class="post-kicker">Weekly AI Platter</p>
-<h1>October 17–23, 2026</h1>
-<p class="summary"><strong>This week’s AI stories showed how model safety and operating conditions connect to a wider environment of devices, voice tools, accelerators, cloud choice, retrieval, and video creation.</strong><br />This issue uses the three Daily AI Bite pairs actually published between Saturday, October 17, and Friday, October 23, to examine what teams should verify before adopting new models and features.<br /></p>
+<h1>October 24–30, 2026</h1>
+<p class="summary"><strong>This week’s AI stories moved beyond better answers toward monitoring unintended behavior, working with specialist fields, and operating several models together.</strong><br />This issue uses the three Daily AI Bite pairs actually published between Saturday, October 24, and Friday, October 30, to examine what teams should verify and control before adoption.<br /></p>
 
-<h2>1. As models are released and operated, safety evaluation must be considered alongside real execution conditions. <a class="source-badge" href="https://safeguards.anthropic.com/2026/self-assessment/">Anthropic material</a></h2>
-<p class="multi-sentence">The Monday, October 19 issue covered Anthropic’s model self-assessment approach and Reflection’s 501-billion-parameter open model, Beam.<br />Together, they showed both a way for models to produce additional risk signals and an option for developers to control model weights and the execution environment more directly.<br /></p>
-<p class="multi-sentence">Self-assessment can expand human review, but it is not independent safety certification.<br />An open model’s size also does not determine quality, cost, or reliability, so teams need to test hardware, licensing, errors, and monitoring in the intended environment.<br /></p>
+<h2>1. As AI connects to real environments, monitoring model behavior and responding to failures becomes essential. <a class="source-badge" href="https://openai.com/index/how-we-detect-frontier-model-misalignment/">OpenAI announcement</a></h2>
+<p class="multi-sentence">The Monday, October 26 issue covered OpenAI’s Decisions API, Cohere’s confidential computing, and the connection between Microsoft Teams and GitHub Copilot, while the Wednesday, October 28 issue covered OpenAI’s public research process and Cohere’s open-weight model security case.<br />The Friday, October 30 issue added OpenAI’s multi-layer monitoring system for frontier-model misalignment.<br /></p>
+<p class="multi-sentence">Together, these stories treat AI safety as an operating problem involving networks, files, tools, and system telemetry, not only answer filtering or model training.<br />OpenAI’s detection timing and Cohere’s security case are company-reported evaluations, so independent reproduction and red-team testing still matter.<br /></p>
 
-<h2>2. AI execution is expanding across devices, voice interfaces, and alternative accelerators. <a class="source-badge" href="https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/">Meta research</a></h2>
-<p class="multi-sentence">The Wednesday, October 21 issue covered Meta’s on-device agent model, Mistral’s voice-agent tools, and AWS’s public beta of TorchNeuron for Trainium.<br />AI systems are becoming more concrete across local devices, voice workflows that call external tools, and paths for running existing PyTorch code on different accelerators.<br /></p>
-<p class="multi-sentence">But “on-device” does not by itself guarantee privacy, and voice actions need confirmation and cancellation paths for recognition and tool errors.<br />Likewise, code running on another chip is not the same as proving better performance or lower cost; those claims require comparison with real models and workloads.<br /></p>
+<h2>2. In research, medicine, and science, collaboration and human verification matter alongside the model. <a class="source-badge" href="https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/">Meta announcement</a></h2>
+<p class="multi-sentence">The Wednesday issue introduced Google and NASA’s concept validation for space robotics and OpenAI’s approach to having outside researchers examine results in mathematics, computer science, and physics.<br />The Friday issue added Meta’s announcement of grants and model access for five U.S. universities working on medical and scientific projects.<br /></p>
+<p class="multi-sentence">Publishing research materials or connecting AI to hospitals and laboratories does not end the verification process.<br />Teams need reproducible materials, expert interpretation, checks for missing data, patient-safety controls, and supervision in the intended environment; a research goal or proof of concept is not the same as clinical effectiveness or academic consensus.<br /></p>
 
-<h2>3. Enterprise AI choices now span model selection, evidence retrieval, and media production. <a class="source-badge" href="https://openai.com/index/openai-models-google-cloud/">OpenAI announcement</a></h2>
-<p class="multi-sentence">The Friday, October 23 issue covered OpenAI models and Codex workflows in Google Cloud Model Garden, Cohere Rerank 5, and HeyGen Video.<br />Organizations increasingly need to decide where to choose a model, which evidence to pass from long documents, and how to create video scenes and sound as part of one adoption workflow.<br /></p>
-<p class="multi-sentence">These tools may simplify how AI is used, but company-reported performance, pricing, and availability do not guarantee results in a particular organization.<br />Teams should test data-processing regions, retrieval misses, costs, copyright, likeness and voice consent, and human review using their own materials.<br /></p>
+<h2>3. Developers are moving from choosing one model to operating several models and task flows. <a class="source-badge" href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/">GitHub changelog</a></h2>
+<p class="multi-sentence">The Monday issue covered a structured Decisions API and a GitHub app that turns notifications in Teams into coding work.<br />The Friday issue reported that GitHub Copilot Fusion became generally available as a system that routes and coordinates several models for a task.<br /></p>
+<p class="multi-sentence">These tools may reduce the effort of selecting and switching models, but they make model traceability, cost, permissions, and review responsibility more important.<br />Company cost and performance comparisons should be treated as company evaluations and tested against the organization’s own repositories, plan, and workload.<br /></p>
 
 <h2>This week’s direction.</h2>
-<p class="multi-sentence">Three Daily AI Bite pairs were actually published between Saturday and Friday: October 19, 21, and 23.<br />Across the three issues, the focus widened from model safety and execution conditions to varied hardware and voice tools, then to enterprise model choice, evidence retrieval, and video production.<br /></p>
+<p class="multi-sentence">Three Daily AI Bite pairs were actually published between Saturday, October 24, and Friday, October 30: October 26, 28, and 30.<br />The issues widened from structured decisions and security to research, robotics, and medical collaboration, then to multi-model developer tools and monitoring for unintended behavior.<br /></p>
 <ul>
-<li><strong>Evaluation:</strong> Separate model self-assessments and company benchmarks from independent review and testing on real work.</li>
-<li><strong>Execution:</strong> Check data handling, permissions, and confirmation and cancellation paths across devices, clouds, accelerators, and voice tools.</li>
-<li><strong>Adoption:</strong> Test quality, cost, rights, and operational responsibility with your own materials instead of relying on feature lists.</li>
+<li><strong>Safety:</strong> Test network, file, and tool behavior along with the model’s written responses.</li>
+<li><strong>Field use:</strong> Read early research, medical, and robotics results through independent validation and human supervision.</li>
+<li><strong>Operations:</strong> Track model selection, cost, permissions, and review responsibility in the real workflow.</li>
 </ul>
-<p class="multi-sentence">When reading a new AI announcement, ask not only “What is new?” but also “Where does it run?”, “What evidence does it use?”, and “Who checks and stops it when something goes wrong?”<br /></p>
+<p class="multi-sentence">When reading a new AI announcement, ask not only “What is new?” but also “Who validates it?”, “Which environment limits failures?”, and “Who controls the models and tools working together?”<br /></p>
 
-<p class="verification-note">This draft is based only on the three bilingual Daily AI Bite pairs verified LIVE between October 17 and 23, 2026: October 19, 21, and 23.<br />The main claims and announcement dates were cross-checked against the Anthropic, Reflection, Meta, Mistral, AWS, OpenAI, Cohere, and HeyGen materials linked from those published issues; availability, pricing, performance, and licensing should be rechecked immediately before publication.<br /></p>
+<p class="verification-note">This draft is based only on the three bilingual Daily AI Bite pairs verified LIVE in both channels between October 24 and 30, 2026: October 26, 28, and 30.<br />The official materials and publication dates linked from those issues were cross-checked, and company experiments, research plans, and performance claims are separated from independent validation.<br /></p>
 
 <h2>Sources.</h2>
 <ul class="sources">
-<li><a href="https://safeguards.anthropic.com/2026/self-assessment/">Anthropic — Self-assessment</a></li>
-<li><a href="https://reflection.ai/blog/beam-is-available">Reflection — Beam is available</a></li>
-<li><a href="https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/">Meta AI Research — Muse Glimmer 30B</a></li>
-<li><a href="https://mistral.ai/news/voxtral-3/">Mistral — Voxtral 3</a></li>
-<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium/">AWS — TorchNeuron public beta announcement</a></li>
-<li><a href="https://openai.com/index/openai-models-google-cloud/">OpenAI — OpenAI models are coming to Google Cloud</a></li>
-<li><a href="https://openai.com/form/openai-on-google-cloud/">OpenAI — OpenAI on Google Cloud access preview</a></li>
-<li><a href="https://cohere.com/blog/rerank-5">Cohere — Introducing Rerank 5</a></li>
-<li><a href="https://www.heygen.com/blog/introducing-heygen-video">HeyGen — Introducing HeyGen Video</a></li>
+<li><a href="https://openai.com/index/how-we-detect-frontier-model-misalignment/">OpenAI — How we detect frontier model misalignment</a></li>
+<li><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">OpenAI — Working with academic communities to build scientific understanding</a></li>
+<li><a href="https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/">Meta — Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs</a></li>
+<li><a href="https://cloud.google.com/blog/topics/public-sector/google-cloud-and-nasa-testing-robotic-systems-for-deep-space-missions">Google Cloud — Google Cloud and NASA: Testing robotic systems for deep space missions</a></li>
+<li><a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/">GitHub — Route and orchestrate models with GitHub Copilot Fusion</a></li>
+<li><a href="https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model">Cohere — Concerning behavior from a popular open-weight AI model</a></li>
 </ul>
 
     </article>
@@ -182,8 +179,8 @@
 
       <li>
         <a class="current" href="#latest">
-          <time datetime="2026-10-24">2026. 10. 24</time>
-          <strong>October 17–23, 2026</strong>
+          <time datetime="2026-10-31">2026. 10. 31</time>
+          <strong>October 24–30, 2026</strong>
           <span>Reading now</span>
         </a>
       </li>
