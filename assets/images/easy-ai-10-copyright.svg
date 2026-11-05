@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">사람의 창작과 AI 도구를 구분하는 장면</title>
+  <desc id="desc">한 사람이 스케치와 편집 도구를 살펴보고, AI가 만든 여러 조각 중 일부를 골라 하나의 작품으로 정리하는 모습</desc>
+  <rect width="1200" height="700" fill="#f6efe4"/>
+  <circle cx="940" cy="150" r="92" fill="#d9e8e2"/>
+  <rect x="110" y="120" width="430" height="420" rx="28" fill="#fffaf2" stroke="#273b3a" stroke-width="8"/>
+  <rect x="160" y="175" width="330" height="210" rx="18" fill="#d9e8e2"/>
+  <path d="M205 330 C245 250 285 290 325 220 S410 250 460 190" fill="none" stroke="#c66b4b" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="205" cy="330" r="13" fill="#273b3a"/><circle cx="325" cy="220" r="13" fill="#273b3a"/><circle cx="460" cy="190" r="13" fill="#273b3a"/>
+  <rect x="160" y="425" width="135" height="58" rx="12" fill="#e9c46a"/><rect x="320" y="425" width="170" height="58" rx="12" fill="#c66b4b"/>
+  <path d="M650 450 C710 360 790 350 860 420" fill="none" stroke="#273b3a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M875 420 L845 385 M875 420 L830 430" fill="none" stroke="#273b3a" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="720" cy="230" r="72" fill="#e9c46a"/>
+  <rect x="650" y="305" width="145" height="170" rx="50" fill="#c66b4b"/>
+  <path d="M670 345 L555 430" stroke="#273b3a" stroke-width="24" stroke-linecap="round"/><path d="M775 345 L885 430" stroke="#273b3a" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="1030" cy="300" r="88" fill="#fffaf2" stroke="#273b3a" stroke-width="8"/>
+  <circle cx="1000" cy="285" r="10" fill="#273b3a"/><circle cx="1060" cy="285" r="10" fill="#273b3a"/>
+  <path d="M985 335 Q1030 365 1075 335" fill="none" stroke="#273b3a" stroke-width="9" stroke-linecap="round"/>
+  <path d="M970 210 L950 165 M1030 205 L1035 150 M1090 220 L1120 180" stroke="#c66b4b" stroke-width="10" stroke-linecap="round"/>
+  <rect x="890" y="485" width="210" height="70" rx="20" fill="#d9e8e2" stroke="#273b3a" stroke-width="8"/>
+  <path d="M925 520 L970 545 L1065 500" fill="none" stroke="#273b3a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
